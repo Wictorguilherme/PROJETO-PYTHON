@@ -78,6 +78,7 @@ class ContaPoupanca(ContaCorrente):
             print("Saldo insuficiente na poupança.")
 
     def extrato(self):
+        # Usando `self` para acessar a classe base
         print(f"Titular: {self.nome_titular}")
         print(f"Número da conta: {self.numero_conta}")
         print(f"Saldo da Conta Corrente: R$ {self.get_saldo():.2f}")
